@@ -18,9 +18,12 @@ import { Success } from './pages/Success/Success.tsx';
 
 const Menu = lazy(() => import('./pages/Menu/Menu'));
 
+// Создайте переменную для базового пути
+const basePath = '/FoodTruck';
+
 const router = createBrowserRouter([
 	{
-		path: '/',
+		path: basePath + '/',
 		element: <RequireAuth><Layout /></RequireAuth>,
 		children: [
 			{
@@ -52,7 +55,7 @@ const router = createBrowserRouter([
 		]
 	},
 	{
-		path: '/auth',
+		path: basePath + '/auth',
 		element: <AuthLayout />,
 		children: [
 			{
