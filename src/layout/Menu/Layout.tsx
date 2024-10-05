@@ -30,19 +30,19 @@ export function Layout() {
 				<div className={styles['email']}>{profile?.email}</div>
 			</div>
 			<div className={styles['menu']}>
-				<NavLink to='/' className={({ isActive }) => cn(styles['link'], {
+				<NavLink to='/FoodTruck/' className={({ isActive }) => cn(styles['link'], {
 					[styles.active]: isActive
 				})}>
-					<img src="/menu-icon.svg" alt="Иконка меню" />
+					<img src="/FoodTruck/menu-icon.svg" alt="Иконка меню" />
 					Меню</NavLink>
-				<NavLink to='/cart' className={({ isActive }) => cn(styles['link'], {
+				<NavLink to='/FoodTruck/cart' className={({ isActive }) => cn(styles['link'], {
 					[styles.active]: isActive
 				})}>
-					<img src="/cart-icon.svg" alt="Иконка корзины" />Корзина <span className={styles['cart-count']}>{items.reduce((acc, item) => acc += item.count, 0)}</span></NavLink>
+					<img src="/FoodTruck/cart-icon.svg" alt="Иконка корзины" />Корзина <span className={styles['cart-count']}>{items.reduce((acc, item) => acc += item.count, 0)}</span></NavLink>
 
 			</div>
 			<Button className={styles['exit']} onClick={logout}>
-				<img src="/exit-icon.svg" alt="Иконка выхода" />
+				<img src="/FoodTruck/exit-icon.svg" alt="Иконка выхода" />
 				Выход
 			</Button>
 		</div>
