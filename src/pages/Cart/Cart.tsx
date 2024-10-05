@@ -48,7 +48,7 @@ export function Cart() {
 			}
 		});
 		dispatch(cartActions.clean());
-		navigate('/success');
+		navigate('/FoodTruck/success');
 	};
 
 	useEffect(() => {

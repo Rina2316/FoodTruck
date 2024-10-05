@@ -24,7 +24,7 @@ export function Login() {
 
 	useEffect(() => {
 		if (jwt) {
-			navigate('/');
+			navigate('/FoodTruck');
 		}
 	}, [jwt, navigate]);
 

@@ -19,7 +19,7 @@ export function Layout() {
 
 	const logout = () => {
 		dispatch(userActions.logout());
-		navigate('/auth/login');
+		navigate('/FoodTruck/auth/login');
 	};
 
 	return <div className={styles['layout']}>
