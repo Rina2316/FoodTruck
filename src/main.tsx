@@ -27,19 +27,19 @@ const router = createBrowserRouter([
 		element: <RequireAuth><Layout /></RequireAuth>,
 		children: [
 			{
-				path: '/',
+				path: '',
 				element: <Suspense fallback={<>Загрузка...</>}><Menu /></Suspense>
 			},
 			{
-				path: '/success',
+				path: 'success',
 				element: <Success />
 			},
 			{
-				path: '/cart',
+				path: 'cart',
 				element: <Cart />
 			},
 			{
-				path: '/product/:id',
+				path: 'product/:id',
 				element: <Product />,
 				errorElement: <>Ошибка</>,
 				loader: async ({ params }) => {
